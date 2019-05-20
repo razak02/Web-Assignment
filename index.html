@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- Basic CSS Example -->
+
+<html lang="en">;
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Example</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">;
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>;
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> 
+
+
+  <!-- Introducing the Style Tag! -->
+  <!-- ========================== -->
+
+  <!-- Now you can customize the look of your sites. Each rule in the style tag changes the appearance of elements matching the selector -->
+<style>
+  /*
+    NOTE: Commenting is a bit different in CSS. 
+    They start with forward-slash + asterisk 
+    and end with back-slash + asterisk.
+    */
+
+  /* h1 heading tag */
+  h1 {
+    /* Put a 15-pixel margin at the bottom of the heading. */
+    margin-bottom: 0px;
+    /* Change the size of your font to 60 pixels high. */
+    font-size: 30px;
+    /* This will color the heading font white. */
+    color: blue;
+    /* Align the text to the center of its enclosing element (e.g. div). */
+    text-align: center;
+    /* Underline the text. */
+    /* text-decoration: underline;
+    /* The background of the heading element will now be white. */
+    background-color: whitesmoke;
+  }
+
+  /* h2 heading tags */
+  h2 {
+    /* Put a 15-pixel margin at the top of all h2 headings. */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* h3 heading tags */
+  h3 {
+    margin-top: 15px;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* All img tags */
+  img {
+    /* 
+      Center a block element in the middle of its enclosing tag.
+      When you use the "auto" rule on both left and right margins, 
+      your browser will do the math necessary to center a block element.
+      */
+     margin-left: auto;
+     margin-right: auto;
+     Block display;
+     margin-bottom: 70px;
+     
+       }
+
+  /* All p tags */
+  p {
+    text-align: center;
+    font-size: 15px;
+    /* Bold the text. */
+    font-weight: bold;
+  }
+
+  /* All unordered list tags */
+  ul {
+    text-align: center;
+    font-size: 15px;
+    /* Give an element a solid border. */
+    border-style: none;
+    /* Render the border 5 pixels thick. */
+    border-width: 50px;
+    /* Include bullets in the content flow. */
+    /* More info here: http://www.w3schools.com/cssref/pr_list-style-position.asp */
+    list-style-position: outside;
+  }
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-cloudy">
+       
+      <a class="navbar-brand" font-size: 170px;
+       href="index.html">  LATITUDE </a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto ">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                  Plots
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="Temp_new.html">Max Temperature</a>
+                  <a class="dropdown-item" href="Humidity_new.html">Humidity</a>
+                  <a class="dropdown-item" href="Cloudy_new.html">Cloudiness</a>
+                  <a class="dropdown-item" href="Windy_new.html">Wind Speed</a>
+                </div>
+            </li>
+      
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Comparison </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Data</a>
+          </li>
+      
+          <!-- Dropdown -->
+         
+        </ul>
+    </nav>
+    <br>
+        
+      
+
+
+
+
+
+  <h1>Comparision: Latitude vs X</h1>
+
+  <h3>  click on each figure to get further details</h3>
+  
+    <div class ="row">
+          <div class="col-sm-6">
+              <a target=_blank href="Cloudy_new.html">
+                <img class= "image-responsive resize repose" src="MyImages\Cloudiness_plot.png" height="400" width="655"                         
+                alt="Latitude Vs Temperature">
+              </a>    
+        </div>
+        <hr>
+        <div class="col-sm-6">
+            <a target=_blank href="Humidity_new.html">
+                <img class= "image-responsive resize repose" src="MyImages\Humidity_plot.png" height="400" width="655" float="right"
+                alt="Latitude Vs Humidity"> 
+            </a>        
+      </div>
+        <hr>
+    </div>
+  </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <a target=_blank href="Temp_new.html">
+                <img class= "image-responsive resize repose" src="MyImages\lat_temp_plot.png" height="400" width="655"
+                alt="Latitude Vs Cloudiness">
+            </a>    
+        </div>
+        <hr>
+        <div class="col-sm-6">
+            <a target=_blank href="Windy_new.html">
+                <img class= "image-responsive resize repose" src="MyImages\Wind_Speed_plot.png" height="400" width="655"
+                alt="Latitude Vs Windspeed">
+            </a>        
+        </div>
+        <hr>
+    </div>        
+  </div>
+
+  <div class="footer navbar-fixed-bottom">
+      <div class="footer-top"></div>
+      <div class="container"> 
+      <p class="footer-text">Abdul Razak  ---  Web Visualization-Dashboard Project  ---  5/14/2019</p>
+  </div>
+
+</body>
+
+</html>
